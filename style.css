@@ -1,8 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Poppins',sans-serif;
+    /*font-family:'Poppins',sans-serif;*/
     box-sizing: border-box;
+ 
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+
 }
 
 html{
@@ -15,7 +19,7 @@ body{
 #header{
     width: 100%;
     height:100vh;
-    background-image: url(background.png);
+    background-image: url(bg1.jpg);
     background-size: cover;
     background-position: center;
 
@@ -24,6 +28,8 @@ body{
 .container{
     padding: 10px 10%;
 }
+
+
 nav{
     display: flex;
     align-items: center;
@@ -31,6 +37,7 @@ nav{
     flex-wrap: wrap;
 
 }
+
 .logo{
     width: 140px;
 }
@@ -74,7 +81,7 @@ nav ul li a:hover::after{
 
 }
 .header-text h1 span{
-    color:#ff004f;
+    color:#50ee58;
 
 }
 /* --------about SEction------ */
@@ -102,6 +109,9 @@ nav ul li a:hover::after{
     font-size: 80px;
     font-weight: 600;
     color: black;
+}
+.sub-title span{
+    color:red;
 }
 .about-col-2 .p{
     font-size: 80px;
@@ -138,7 +148,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color:#b54769;
+    color:rgb(208, 0, 255);
     font-size: 14px;
 }
 .tab-contents{
@@ -151,6 +161,10 @@ nav ul li a:hover::after{
 #services{
     padding: 30px 0;
 
+}
+.container span{
+    color:blueviolet;
+    
 }
 .services-list{
     display: grid;
@@ -276,6 +290,7 @@ nav ul li a:hover::after{
     }
     .contact-right{
         flex-basis:60%;
+        
     }
     .contact-left p{
         margin-top:30px;
@@ -303,6 +318,8 @@ nav ul li a:hover::after{
 .btn.btn2{
     display:inline-block;
     background-color: #ff004f;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .contact-right form{
