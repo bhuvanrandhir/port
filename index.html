@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,17 +15,20 @@
         <div class="container">
             <nav>
                 <!--img src="image/logo.png" class="logo"-->
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header"><b>Home</b></a></li>
                     <li><a href="#about"><b>About</a></li>
                     <li><a href="#services"><b>Services</a></li>
                     <li><a href="#portfolio"><b>Portfolio</a></li>
                     <li><a href="#contact"><b>Contact</a></li>
+                        <i class="fas fa-times "onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Associated SoftWare Engineer</p>
-                <h1>Hi, I'm <span>RANDHIR K.</span><br>From <span>INDIA</span></h1>
+                <p>Associated <span>SoftWare Engineer</span></p>
+                <h1>Hi, I'm <span>RANDHIR K.</span></h1>
+                
             </div>
         </div>
     </div>
@@ -172,6 +175,14 @@
             </div>
         </div>
     </div>
+
+    <div class="copyright">
+        <p style="color:black;"><marquee>Copyright &copy;2024 Randhir K.| Reded Dotcom</marquee></p>
+        
+        
+        
+
+    </div>
   </div>
 
 
@@ -217,12 +228,27 @@
             msg.innerHTML="Message Sent Successfully!!"
             setTimeout(function(){
                 msg.innerHTML=""
-            },1000)
+            },5000)
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
     })
   </script>
     
+
+    <script>
+
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right="0"; // yani jab right 0 ho to open hoga
+        }
+
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";  //hidden 
+        }
+    </script>
 </body>
 </html>
